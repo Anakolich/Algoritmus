@@ -3,90 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>School of programming Algoritmus</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="logo1.jpg" width="200" alt="Логотип школы Алгоритм">
-            </td>
-            <td>
+    <div class="container">
+        <div class="info">
+            <img src="logo1.jpg" alt="Логотип школы Алгоритм" class="avatar">
+            <div class="info-text">
                 <h1>Algoritmus</h1>
                 <p>Школа робототехники и программирования для детей</p>
                 <p>Учим играя</p>
-            </td>
-        </tr>
-    </table>
-    
-    <hr>
-
-    <h2>Научим ребенка:</h2>
-        <ul>
-            <li>Делать интересные сайты и интернет-страницы</li>
-            <li>Основам языков программирования Javascript и Piton</li>
-            <li>Робототехники на платформе Arduino</li>
-        </ul>
-
-    <h2>Расписание занятий</h2>
-    <table>
-        <tr>
-            <th>Наименование курса</th>
-            <th>Нагрузка в неделю</th>
-            <th>Продолжительность курса</th>
-        </tr>
-        <tr>
-            <td>Курсы по HTML и CSS</td>
-            <td>2 раза в неделю по 2 часа</td>
-            <td>в течении учебного года</td>
-        </tr>
-        <tr>
-            <td>Курсы по JavaScript</td>
-            <td>2 раза в неделю по 2 часа</td>
-            <td>в течении учебного года</td>
-        </tr>
-        <tr>
-            <td>Курсы по Piton</td>
-            <td>2 раза в неделю по 2 часа</td>
-            <td>в течении учебного года</td>
-        </tr>
-        <tr>
-            <td>Курсы по робототехнике</td>
-            <td>2 раза в неделю по 2 часа</td>
-            <td>в течении учебного года</td>
-        </tr>
-    </table>
-
-    <h2>Контакты</h2>
-    <p></p> 
-    <p>670000, Бурятия, г.Улан-Удэ</p>
-    <p>ул.Партизанская 33, остановка Виадук</p>
-    <p>Записаться на курсы можно по тел.+7(902)1691151</p>
-    <p><a href="">Algoritmus в Instagram</a></p>
-
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" 
-        placeholder="Введите ваше имя...">
-
-        <br>
-
-        <label for="email">Ваш Email</label>
-        <input type="text" id="email" 
-        placeholder="Введите ваш Email...">
-
-        <br>
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea name="" id="text" cols="15" rows="3"></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться"> 
+            </div>
+            
+        </div>
+        
+        <div class="card bg-yellow">
+            <h2>Научим ребенка:</h2>
+            <ul>
+                <li>Делать интересные сайты и интернет-страницы</li>
+                <li>Основам языков программирования Javascript и Piton</li>
+                <li>Робототехники на платформе Arduino и Lego</li>
+            </ul>
+        </div>
        
-    </form>
+        <div class="card bg-green">
+            <h2>Расписание занятий</h2>
+            <table class="table">
+                
+                <tr>
+                    <td>Курсы по HTML и CSS</td>
+                    <td>2 раза в неделю по 2 часа</td>
+                    <td>в течении учебного года</td>
+                </tr>
+                <tr>
+                    <td>Курсы по JavaScript</td>
+                    <td>2 раза в неделю по 2 часа</td>
+                    <td>в течении учебного года</td>
+                </tr>
+                <tr>
+                    <td>Курсы по Piton</td>
+                    <td>2 раза в неделю по 2 часа</td>
+                    <td>в течении учебного года</td>
+                </tr>
+                <tr>
+                    <td>Курсы по робототехнике</td>
+                    <td>2 раза в неделю по 2 часа</td>
+                    <td>в течении учебного года</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card bg-red"> 
+            <h2>Контакты</h2>
+            <p></p> 
+            <p>670000, Бурятия, г.Улан-Удэ</p>
+            <p>ул.Партизанская 33, остановка Виадук</p>
+            <p>Записаться на курсы можно по тел.+7(902)1691151</p>
+            <p><a href="">Algoritmus в Instagram</a></p>
+        </div>
+        
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" 
+                        placeholder="Введите ваше имя...">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="text" id="email" 
+                        placeholder="Введите ваш email...">
+                    </div>
+                    
+                </div>
+                               
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea name="" id="text" cols="15" rows="3"></textarea>
+                </div>
 
-
+                <input  class="btn" type="submit" value="Связаться"> 
+               
+            </form>
+    
+        </div>
+        
+           
+    </div>
+    
 </body>
 </html>
 
